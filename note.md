@@ -62,3 +62,29 @@ docker run -p 6379:6379 --name redis -v /mydata/redis/data:/data \
 
 -   lombok: 通过注解用来简化 Model 类编写，需要 IDEA 插件和 Maven 依赖一起使用。(高版本 IDEA 自动安装)
 -   MyBatisX：MyBatis 开发操作简化的插件。包括 dao 层和 xml 文件跳转，代码自动补全等。https://blog.csdn.net/weixin_45433031/article/details/123074650
+
+## Maven父工程
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.atguigu.gulimall</groupId>
+	<artifactId>gulimall</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>gulimall</name>
+	<description>gulimall parent module</description>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>gulimall-coupon</module>
+		<module>gulimall-member</module>
+		<module>gulimall-order</module>
+		<module>gulimall-product</module>
+		<module>gulimall-ware</module>
+	</modules>
+
+</project>
+
+```
