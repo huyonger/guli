@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Mapper;
  * 
  * @author huyong
  * @email huyong@gmail.com
- * @date 2023-07-16 12:07:09
+ * @date 2023-07-16 17:27:44
  */
 @Mapper
 public interface ProductAttrValueDao extends BaseMapper<ProductAttrValueEntity> {

@@ -22,7 +22,7 @@ import com.atguigu.common.utils.R;
  *
  * @author huyong
  * @email huyong@gmail.com
- * @date 2023-07-16 12:07:09
+ * @date 2023-07-16 17:27:43
  */
 @RestController
 @RequestMapping("product/attrattrgrouprelation")
